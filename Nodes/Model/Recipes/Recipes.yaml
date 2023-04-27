@@ -1,0 +1,85 @@
+Name: Recipes
+Id: g=402676926eff129abefacba5b76eda03
+Type: FolderType
+Children:
+- Name: Phase1Duration
+  Id: g=84571b5e66c5e96d1149eddeb222ca01
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase1SetPoint
+  Id: g=a7acca102433edabbd9830a261d13086
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Phase1InputFanSpeed
+  Id: g=97492fa5aaed42fb8dc09d6644f04f1e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase1ExtractionFanSpeed
+  Id: g=97a00562aa8bdc890b4d8c8679fc6b7c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase2Duration
+  Id: g=cc252ab270f0db84a87be4976a481f23
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase2SetPoint
+  Id: g=ab89615b40dd0cb7e57eb23b8ff029ba
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase2InputFanSpeed
+  Id: g=5d09c4594751e6a86358413e6032a3da
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase2ExtractionFanSpeed
+  Id: g=96f8be298a63adc968891a986edf16aa
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase3Duration
+  Id: g=b18036b5b0d353f77d9bc9ebe33a347b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase3SetPoint
+  Id: g=e99c59c49168007e0000b56c820c4d0b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase3InputFanSpeed
+  Id: g=86a93661bf45a343c96cb47e0011e009
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Phase3ExtractionFanSpeed
+  Id: g=579f35b8045c52212a753e0612a6b4ed
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

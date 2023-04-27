@@ -1,0 +1,75 @@
+Name: MainUsers
+Id: g=1f8e283d61ff209a171f61d4a140dbeb
+Type: FolderType
+Children:
+- Name: John
+  Id: g=d5df663edbd6967e3067ab7a36f8044a
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=e02db602033ad89cd34b57de6194259c
+  - Name: Password
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[65,17,19,177,91,222,46,157,4,41,98,22,65,217,216,15,242,66,70,190,146,16,207,127,92,56,99,159,90,240,230,114],"Salt":[210,114,126,211,13,227,224,95,107,201,171,233,42,232,253,68,142,182,19,74,17,12,122,81,87,105,139,81,216,145,255,105]}}
+    - Name: ChangeTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-12-15T17:58:05.0283410"
+    - Name: History
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+- Name: Marco
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "it-IT"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=e02db602033ad89cd34b57de6194259c
+  - Name: Password
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[65,47,247,235,83,67,32,218,37,210,21,58,67,98,241,207,84,248,82,215,201,3,116,47,115,206,245,40,28,221,172,194],"Salt":[21,153,96,226,80,227,240,117,76,180,48,42,215,45,41,146,220,143,60,248,90,18,102,73,202,182,160,69,105,178,73,244]}}
+    - Name: ChangeTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-12-15T17:58:13.0008154"
+    - Name: History
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []

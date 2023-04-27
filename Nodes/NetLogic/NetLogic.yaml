@@ -1,0 +1,413 @@
+Name: NetLogic
+Type: FolderType
+Children:
+- Name: PushAgent
+  Id: g=439a5aafa9eaba409f275e45d88f860f
+  Type: NetLogic
+  Children:
+  - Name: DataLogger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"8abf6032e0ae006b2f182ec5a5b2e4c4","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":11}
+  - Name: PushFullSample
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PreserveDataLoggerHistory
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: MaximumStoreCapacity
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: MaximumItemsPerPacket
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: MaximumPublishTime
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:1.0000000"
+  - Name: MinimumPublishTime
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.5000000"
+  - Name: ClientId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: BrokerIPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "test.mosquitto.org"
+  - Name: BrokerPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1883
+  - Name: BrokerTopic
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "iotdemo-processdata"
+  - Name: QoS
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: CACert
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=28;%PROJECTDIR%/client/ca.pem"
+    - Name: ClientCert
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=28;%PROJECTDIR%/client/client.pfx"
+    - Name: ClientCertPassword
+      Type: BaseDataVariableType
+      DataType: Password
+      Value: "asem"
+  - Name: Username
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: ""
+  - Class: Method
+    Name: AttachNewMachine
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"machineName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: SendChatMessage
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"machineName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"messageText","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: Connected
+    Id: g=ffe7075a66240abe4a45c516cb72dbfe
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: OvenSimulator
+  Id: g=141ada5cdef61eb4beb7aaf64ca83e14
+  Type: NetLogic
+  Children:
+  - Name: SetPointF1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase1SetPoint"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DurationF1
+    Id: g=6511516dad6cdc411b5692cc98203c54
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase1Duration"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanInputF1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase1InputFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanOutputF1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase1ExtractionFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SetPointF2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 150
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase2SetPoint"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DurationF2
+    Id: g=9d07df5e6af00a0fb3feac5b1cc92c69
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase2Duration"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanInputF2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase2InputFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanOutputF2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase2ExtractionFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SetPointF3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase3SetPoint"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DurationF3
+    Id: g=bba1830715f03072138a999a67d78cc0
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase3Duration"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanInputF3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase3InputFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SpeedFanOutputF3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Recipes/Phase3ExtractionFanSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: StartStop
+    Id: g=b4ab7a40c551d9fb3211321deb7a13be
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Running
+    Id: g=ea7f17cd4aeaa2af18c46265bd3d4650
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ActualPhase
+    Id: g=fd79ed7dc187965e94dbb79c89df4acb
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualTemperature
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: ActualDuration
+    Id: g=71d818811ba64f5a12de18db2d592599
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualDurationF1
+    Id: g=d99e5c6e6407f09e62444e999c3c5bfe
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualDurationF2
+    Id: g=a55c87c112eaf8609022e2f21df4473e
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualDurationF3
+    Id: g=807d7c06d48488d53e418f2c5467a3fc
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SpeedFanInput
+    Id: g=42bb6576ac9e7803e445e4288c3b4732
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SpeedFanOutput
+    Id: g=dc5db2b7b98d78f3005d19d0123ccee9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TimeToFinishPhase
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TimeToFinishAll
+    Id: g=1371ca50b9d3b7d6648e900a6bcc759d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: JobsCounter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Preheating
+    Id: g=4c94e2b1c95a0f6feab8b5b745aba95f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PreheatingTemperature
+    Id: g=f922a16dae8be3dbc79f998ad83b658e
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Name: ActualSetPoint
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Gas
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: kWh
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: JobStart
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: JobFinish
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: JobRecipe
+    Id: g=8d628b0f26821adbc5d1f63d754b306b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "No Recipe Selected"
+  - Name: JobGas
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: JobkWh
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: GasThrottle
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: kW
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Class: Method
+    Name: ResetFilter
+- Name: PushAgentAlarmsRecipes
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: PushAlarm
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

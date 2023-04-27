@@ -1,0 +1,62 @@
+Name: DemoIoT_PS_Local
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US","it-IT"]
+- Name: LocaleFallbackList
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- File: AlarmTypes/AlarmTypes.yaml
+- Name: RecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"9dfabf67a2ae4c4acf76ed77cee7b2ee","Namespace":28}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1b7064140d0e14a18a4e3f7e354167cd","Namespace":28}
+- Name: PasswordPolicy
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Type: PropertyType
+    DataType: Byte
+    Value: 0

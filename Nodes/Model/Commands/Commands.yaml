@@ -1,0 +1,11 @@
+Name: Commands
+Type: FolderType
+Children:
+- Name: Start
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Stop
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

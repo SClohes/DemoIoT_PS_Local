@@ -1,0 +1,64 @@
+Name: AlarmsWithPushNotification
+Type: FolderType
+Children:
+- Name: DigitalAlarmWithPushNotification1
+  Id: g=84d5654663b4c4841535cc8dd58e04d2
+  Supertype: OffNormalAlarmController
+  DisplayName: {"NamespaceIndex":28,"TextId":"Digital alarm with push notification"}
+  Children:
+  - Class: Reference
+    Target: ns=15;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=28;g=f2314325-84d0-03be-b970-6059f69841b1}"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Type: NetLogic
+  - Name: EmailUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=ef40e52aced318887970c82a5dd10c1a

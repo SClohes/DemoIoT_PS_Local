@@ -1,0 +1,19 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: FilterAlarm
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: TemperatureAlarm
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: DoorAlarm
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: FanAlarm
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

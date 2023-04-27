@@ -1,0 +1,369 @@
+Name: DataStores
+Type: FolderType
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=b9dc8bbf0191bd746483c4147eafa06d
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+    - Name: 'iotdemo-ProcessData'
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Running
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: RecipeName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Temperature
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Phase
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanIn
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanOut
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: SetPoint
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FilterLimit
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: FilterUse
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: ElectricalConsumption
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: LPGConsumption
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Cycle
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: TimeToFinish
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: 'iotdemo-Recipes'
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Phase1Duration
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1SetPoint
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1InputFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1ExtractionFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2Duration
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2SetPoint
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2InputFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2ExtractionFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3Duration
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3SetPoint
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3InputFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3ExtractionFanSpeed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: MachineDataLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Running
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: RecipeName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Temperature
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ElectricalConsumption
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: LPGConsumption
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Phase
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanIn
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanOut
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: SetPoint
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: Cycle
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Throttle
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: kW
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: AlarmsEventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_it-IT'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: TimeZoneDataType
+          Value: {"TypeId":{"Id":8912},"Body":{"offset":0,"daylightSavingInOffset":false}}
+  - Class: Reference
+    Target: ns=21;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=19;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=59
+    Direction: Forward

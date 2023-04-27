@@ -1,0 +1,37 @@
+Name: Users
+Type: FolderType
+Children:
+- Name: Guest
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Password
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[208,243,10,155,55,190,19,244,75,202,225,84,12,36,223,218,27,31,49,172,100,215,204,87,9,58,121,155,34,51,196,23],"Salt":[134,78,222,24,18,76,199,39,182,230,206,88,138,38,233,65,129,167,95,213,60,83,105,131,124,21,236,45,105,130,36,136]}}
+    - Name: ChangeTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-08-31T12:02:13.7556964"
+    - Name: History
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+- File: MainUsers/MainUsers.yaml
+- File: Groups/Groups.yaml

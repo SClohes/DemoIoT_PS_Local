@@ -1,0 +1,28 @@
+Name: Model
+Type: FolderType
+Children:
+- File: Phases/Phases.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Commands/Commands.yaml
+- File: ProcessData/ProcessData.yaml
+- File: Job/Job.yaml
+- File: RetentiveMachineData/RetentiveMachineData.yaml
+- Name: ChatMessageReceived
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- File: LocalizedVariables/LocalizedVariables.yaml
+- Name: Notification
+  Id: g=f932f7029e87dd097729ba0b33fa9051
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: MqttClientId
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "bxbxgxbsxgsgsgsgsvxzgvsrts"
+- Name: ChangeMachineName
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

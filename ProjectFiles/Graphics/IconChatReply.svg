@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.8573942mm"
+   height="6.0816808mm"
+   viewBox="0 0 5.8573942 6.0816808"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="IconChatReply.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.335409"
+     inkscape:cx="11.68195"
+     inkscape:cy="10.817381"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1267"
+     inkscape:window-height="1198"
+     inkscape:window-x="729"
+     inkscape:window-y="82"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-115.16292,-140.44683)">
+    <g
+       style="clip-rule:evenodd;fill-rule:nonzero;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="g847"
+       transform="matrix(-9.0433757e-4,0,0,9.0433757e-4,122.75664,138.70869)">
+      <path
+         id="curve0"
+         fill="#ffffff"
+         d="M 7118,8459 8304,7273 c 124,-124 124,-328 0,-452 L 7118,5634 c -125,-124 -277,-186 -453,-187 l -839,-7 c -65,-1 -122,38 -147,99 -26,61 -12,127 34,174 l 687,687 c -533,0 -1067,0 -1600,0 -442,0 -842,-179 -1131,-469 -290,-289 -469,-689 -469,-1131 0,-442 179,-842 469,-1131 291,-291 691,-471 1131,-471 l 2880,-1 V 1922 l -2880,1 c -797,0 -1517,321 -2036,841 -522,521 -844,1241 -844,2036 0,795 322,1515 844,2036 521,522 1241,844 2036,844 h 1600 l -687,687 c -46,47 -60,113 -34,174 25,61 81,98 147,99 l 839,7 c 176,1 328,-63 453,-188 z" />
+    </g>
+  </g>
+</svg>

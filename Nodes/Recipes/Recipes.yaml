@@ -1,0 +1,165 @@
+Name: Recipes
+Type: FolderType
+Children:
+- Name: RecipeSchema1
+  Id: g=2b8e09dbb993a5bc5f26ff894ac869d3
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Phase1Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=13;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b9dc8bbf0191bd746483c4147eafa06d","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":19}
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "iotdemo-Recipes"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"402676926eff129abefacba5b76eda03","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: ns=13;EditModel
+    Id: g=9dfabf67a2ae4c4acf76ed77cee7b2ee
+    Type: BaseObjectType
+    Children:
+    - Name: Phase1Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase1ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase2ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3SetPoint
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3InputFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Phase3ExtractionFanSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

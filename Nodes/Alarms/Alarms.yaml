@@ -1,0 +1,224 @@
+Name: Alarms
+Type: FolderType
+Children:
+- File: AlarmsWithPushNotification/AlarmsWithPushNotification.yaml
+- Name: FilterAlarm
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=15;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/FilterAlarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Type: NetLogic
+  - Name: EmailUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":28,"TextId":"Filter Alarm"}
+- Name: TemperatureAlarm
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=15;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/TemperatureAlarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Type: NetLogic
+  - Name: EmailUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":28,"TextId":"Temperature Alarm"}
+- Name: DoorAlarm
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=15;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/DoorAlarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Type: NetLogic
+  - Name: EmailUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":28,"TextId":"Door Alarm"}
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: FanAlarm
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=15;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/FanAlarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Type: NetLogic
+  - Name: EmailUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":28,"TextId":"Fan Alarm"}

@@ -1,0 +1,12 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><desc>Copyright Opto 22</desc> 
+<g>
+	<g id="shape">
+		<path fill="#0071BC" d="M84.542,62.789c0-19.234-30.648-38.17-34.827-60.46c-4.179,22.289-34.827,41.225-34.827,60.46
+			s15.593,34.827,34.827,34.827S84.542,82.023,84.542,62.789z"></path>
+	</g>
+	<g id="hlight">
+		
+			<ellipse transform="matrix(0.8264 -0.5631 0.5631 0.8264 -16.9943 48.3505)" fill="#FFFFFF" cx="69.915" cy="51.736" rx="5.447" ry="8.473"></ellipse>
+	</g>
+</g>
+</svg>

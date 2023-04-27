@@ -1,0 +1,22 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><desc>Copyright Opto 22</desc> 
+<g>
+	<g id="shape">
+		<path fill="#999999" d="M2,28.325c0-5.523,21.49-10,48-10s48,4.477,48,10v42.599c0,5.523-21.49,10-48,10s-48-4.477-48-10V28.325z"></path>
+	</g>
+	<g id="linear">
+		<linearGradient class="linear" id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2" y1="54.6245" x2="98" y2="54.6245">
+			<stop offset="0" style="stop-color:#B3B3B3"></stop>
+			<stop offset="1" style="stop-color:#808080"></stop>
+		</linearGradient>
+		<path class="linear" fill="url(#SVGID_1_)" d="M50,38.325c-26.51,0-48-4.477-48-10v42.599c0,5.523,21.49,10,48,10s48-4.477,48-10V28.325
+			C98,33.848,76.51,38.325,50,38.325z"></path>
+	</g>
+	<g id="dark"></g>
+	<g id="light">
+		<ellipse fill="#B3B3B3" cx="50" cy="28.325" rx="48" ry="10"></ellipse>
+	</g>
+	<g id="shadow"></g>
+	<g id="hlight"></g>
+
+</g>
+</svg>

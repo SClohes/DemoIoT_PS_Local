@@ -1,0 +1,124 @@
+Name: Phases
+Type: FolderType
+Children:
+- Name: PhasesSetpointPercent
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+- Name: ProgressBarPhase1
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: ProgressBarPhase2
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: ProgressBarPhase3
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: SetpointTemperature1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: SetpointTemperature2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: SetpointTemperature3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ActualTemperature
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: CycleProgressPercent
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+- Name: CycleProgressTime
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:0.0000000"
+- Name: kWh
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: AnalogTemperature
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualTemperature"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
