@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using FTOptix.NativeUI;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.EthernetIP;
 #endregion
 
 public class RecipesEditorUISetup : BaseNetLogic

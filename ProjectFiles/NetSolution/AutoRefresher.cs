@@ -16,6 +16,7 @@ using FTOptix.OPCUAClient;
 using FTOptix.DataLogger;
 using FTOptix.CommunicationDriver;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class AutoRefresher : BaseNetLogic

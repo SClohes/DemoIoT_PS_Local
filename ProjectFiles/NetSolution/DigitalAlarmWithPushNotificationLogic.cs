@@ -27,6 +27,7 @@ using FTOptix.SQLiteStore;
 using FTOptix.CommunicationDriver;
 using FTOptix.Retentivity;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class DigitalAlarmWithPushNotificationLogic : BaseNetLogic, IUAEventObserver

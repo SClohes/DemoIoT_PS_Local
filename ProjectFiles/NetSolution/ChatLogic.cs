@@ -19,6 +19,7 @@ using FTOptix.EventLogger;
 using FTOptix.Retentivity;
 using System.Linq;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class ChatLogic : BaseNetLogic

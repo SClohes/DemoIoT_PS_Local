@@ -618,6 +618,22 @@ Children:
           DataType: ResourceUri
           ModellingRule: Optional
           Value: "ns=28;%PROJECTDIR%/Graphics/IconNotificationWhite.svg"
+      - Name: Panel1
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"b4acff19ce21ea19d1abaaa971d8c80c","Namespace":28}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId

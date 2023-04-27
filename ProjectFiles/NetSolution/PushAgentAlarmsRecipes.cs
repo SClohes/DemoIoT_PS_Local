@@ -32,6 +32,7 @@ using Newtonsoft.Json.Linq;
 using System.Linq;
 using FTOptix.Retentivity;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 
 public class PushAgentAlarmsRecipes : BaseNetLogic
 {

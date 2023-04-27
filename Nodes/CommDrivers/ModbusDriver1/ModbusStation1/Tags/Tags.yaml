@@ -1,2 +1,111 @@
 Name: Tags
 Type: BaseObjectType
+Children:
+- Name: Pump1_LocalRemote
+  Id: g=09fca72431accab77cbf2345a5e6866a
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+- Name: Pump1_stsRunning
+  Id: g=bcaf8c0643310c41c1533d62eb2bec7c
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 5
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: Pump1_cmdStartHMI
+  Id: g=24063339476e2ada6575d5531eb53f8b
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 31
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: Pump1_cmdReset
+  Id: g=d7c2efd01f641afc31269edf333fc7e3
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 30
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: WaterLevel
+  Id: g=26fac37a51ae7a795d08485f1c719587
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 296
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 32
+- Name: Demand
+  Id: g=2250deeae58cf64e305250b30f438efe
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 328
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 32

@@ -8,6 +8,7 @@ using UAManagedCore.Logging;
 using FTOptix.NativeUI;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.EthernetIP;
 
 public class AlarmIconNotificationLogic : FTOptix.NetLogic.BaseNetLogic
 {

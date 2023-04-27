@@ -18,6 +18,7 @@ using FTOptix.NativeUI;
 using FTOptix.EventLogger;
 using FTOptix.Retentivity;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class MQTTConnectro : BaseNetLogic

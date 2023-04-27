@@ -21,7 +21,7 @@ Children:
   - Name: PreserveDataLoggerHistory
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true
+    Value: false
   - Name: MaximumStoreCapacity
     Type: BaseDataVariableType
     DataType: Int32
@@ -57,7 +57,7 @@ Children:
   - Name: QoS
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 2
+    Value: 0
   - Name: UseSSL
     Type: BaseDataVariableType
     DataType: Boolean

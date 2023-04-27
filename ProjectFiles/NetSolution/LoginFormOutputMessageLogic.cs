@@ -16,6 +16,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.Retentivity;
 using FTOptix.NativeUI;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class LoginFormOutputMessageLogic : FTOptix.NetLogic.BaseNetLogic

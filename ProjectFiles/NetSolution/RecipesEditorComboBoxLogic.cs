@@ -15,6 +15,7 @@ using FTOptix.Retentivity;
 using FTOptix.NativeUI;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.EthernetIP;
 #endregion
 
 public class RecipesEditorComboBoxLogic : FTOptix.NetLogic.BaseNetLogic

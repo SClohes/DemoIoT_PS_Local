@@ -18,6 +18,7 @@ using FTOptix.SQLiteStore;
 using FTOptix.Recipe;
 using FTOptix.Retentivity;
 using FTOptix.Modbus;
+using FTOptix.EthernetIP;
 #endregion
 
 public class ProgressBarManager : BaseNetLogic
